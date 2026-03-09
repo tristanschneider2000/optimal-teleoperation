@@ -364,96 +364,35 @@
 <!-- End youtube video -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-<!-- Paper poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title is-3 is-centered">Robotic Teleoperation Using Motion Tracking Devices Like VR-Controllers</h2>
+      <div class="is-centered">
+        <p>Robotic teleoperation enables human operators to carry out tasks in remote or hazardous environments such as nuclear power plant dismantling, space or undersea applications.
+          
+        The utilization of low-cost virtual reality controllers has emerged as a viable alternative to costly, specialized input devices. However, they only allow the operator to control the end-effector pose, which complicates the avoidance of self-collisions and obstacle collisions involving the other links of the remote robot arm.</p>
 
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+        <p>We present an optimal control formulation for teleoperation that contains collision-avoidance constraints for accurate geometric robot and environment models.</p>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
 
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 is-centered">Capsule-Based Collision Constraints</h2>
+      <div class="is-centered has-text-centered">
+        <img class="center-image is-centered" src="static/images/distances_illustration.png" loading="lazy">
+      </div>
+        <br>
+        <p>Treating the center-lines of capsules as two-vertex polytopes allows us to use a recent approach for polytope-based collision avoidance. This yields differentiable constraints encoding collision-freeness for the collision pairs capsule-polytope, which we use for obstacle avoidance, and capsule-capsule, which we use for self-collision avoidance.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!--BibTex citation -->
