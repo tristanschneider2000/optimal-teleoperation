@@ -311,7 +311,7 @@
 
 
 <!-- Visual abstract-->
-<section class="hero teaser">
+<section class="hero teaser is-light">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <img class="center-image" src="static/images/fig_visual_abstract.png" alt="Visual abstract: Robot and obstacle with capsule and polytope collision models" loading="lazy"/>
@@ -325,7 +325,7 @@
 
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -364,7 +364,7 @@
 <!-- End youtube video -->
 
 
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 is-centered">Robotic Teleoperation Using Motion Tracking Devices Like VR-Controllers</h2>
@@ -395,8 +395,36 @@
 </section>
 
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 is-centered">Optimal Collision-Free Trajectory Planning</h2>
+      <div class="is-centered has-text-centered">
+        <img class="center-image is-centered" src="static/images/tcp_trajectory.png" loading="lazy">
+      </div>
+        <br>
+        <p>Using the newly derived constraints for capsule-based collision avoidance, we formulate an optimal control problem and numerically solve it repeatedly in a model predictive control (MPC) manner. Each time the MPC is run, a smooth trajectory for the joint angles is determined over a finite time horizon. It minimizes the deviation between the predicted reference (determined by the VR-controller) and the pose of the robotic manipulator's end effector (determined via forward kinematics). The trajectory is collision-free and conforms to the physical model and limits of the manipulator.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 is-centered">Results</h2>
+      <div class="is-centered has-text-centered">
+        <img class="center-image is-centered" src="static/images/times_table.png" loading="lazy">
+      </div>
+        <br>
+        <p>Because we do not need to query an additional collision checking or distance measurement algorithm during optimization, our method outperforms the state-of-the-art method in terms of computation time. For self-collision avoidance and avoidance of one polytopic obstacle, the computation time stays below 50 ms, making it real-time capable at 20 Hz, which was verified in real-life experiments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <section class="section hero" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
